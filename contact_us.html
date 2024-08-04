@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - NK-Couriers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: green ;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0; 
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .header nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem; 
+        }
+
+        .header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            margin-top: 130px; 
+            padding: 20px;
+            max-width: 800px;
+            margin: 130px auto 60px auto;
+            background-color: #f4f4f4;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: darkgreen;
+        }
+
+        .contact-form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #006400;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .contact-form button:hover {
+            background-color: #004d00;
+        }
+
+        .footer {
+            background-color: green ;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="courierDetails.html">Courier Details</a>
+            <a href="about_us.html">About Us</a>
+            <a href="help_support.html">Help & Support</a>
+            <a href="index.html">Sign IN/UP</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you! Please fill out the form below to get in touch with us.</p>
+
+        <div class="contact-form">
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+       &copy; 2024 NK-Couriers. All rights reserved.
+        <div>Contact us at nkcouriers@gmail.com | 7868091722</div>
+        <div>Follow us on social media: 
+            <a href="#" style="color: white; text-decoration: none;">Facebook</a> | 
+            <a href="#" style="color: white; text-decoration: none;">Twitter</a> | 
+            <a href="#" style="color: white; text-decoration: none;">Instagram</a>
+        </div>
+        <div>
+            <a href="privacy_policy.html">Privacy Policy |</a>
+            <a href="terms_conditions.html">Terms & Conditions</a>
+        </div>
+    </div>
+</body>
+</html>

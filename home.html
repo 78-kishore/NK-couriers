@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK-Couriers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color:green;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header nav {
+            display: flex;
+            justify-content: space-around;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+        header nav a:hover {
+            background-color: #45a049;
+        }
+        .content {
+            margin-top: 70px;
+            padding: 20px;
+            text-align: center;
+        }
+        .company-name {
+            color: Skyblue;
+            font-size: 36px;
+            margin: 20px 0;
+        }
+        .description {
+            font-size: 18px;
+            margin: 10px 0 30px;
+        }
+        .brand-logos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .brand-logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .brand-logos a {
+            margin: 10px;
+        }
+        .brand-logos img {
+            height: 50px;
+            width: 100px;
+            object-fit: contain;
+        }
+footer {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+   
+}        h2 {
+            color: skyblue;
+            font-size: 36px;
+            margin: 20px 0;
+        }
+        .customer-reviews {
+            margin-top: 40px;
+        }
+        .reviews-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .review {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            display: flex;
+            align-items: center;
+            width: calc(50% - 40px);
+            max-width: 600px;
+        }
+        .review img {
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            margin-right: 20px;
+        }
+        .review .name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .centered-review {
+            width: calc(100% - 40px);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="services.html">Services</a>
+        <a href="courierDetails.html">Courier Details</a>
+        <a href="about_us.html">About Us</a>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="help_support.html">Help & Support</a>
+        <a href="index.html">Sign IN/UP</a>
+    </nav>
+</header>
+
+<div class="content">
+    <div class="company-name">NK-Couriers</div>
+    <div class="description">We are dedicated to providing the best courier services with reliability and speed.</div>
+    
+    <div class="services">   
+        <h2>Our Valuable Customers</h2> 
+        <div class="brand-logos-container">
+            <div class="brand-logos"> 
+                <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjRwsrNl6aHAxUpQUgAHQ_fBn8YABAAGgJjZQ&ase=2&gclid=CjwKCAjw7s20BhBFEiwABVIMrTNDwkX13g6Y6MIF7Lzh4hq8ZIZqnroBsyozRg7O_SgloSsHGff-jRoC4igQAvD_BwE&ei=4JWTZujeEaew4-EPxPaHuAw&ohost=www.google.com&cid=CAESVeD2uUKfAcnxqx0E43KGDjrz49dlcbtcnqJMnRlpsrVcjr3sm4NT8yk3hRKjX6ZoUnQnx3KqMQf5t8gac5LQNmIHsglphF8tlbf2tXazbuj9qas3H5s&sig=AOD64_0VQCFHR1XwVwkSq7BzKawyRUsmoQ&q&sqi=2&nis=4&adurl&ved=2ahUKEwjozrbNl6aHAxUn2DgGHUT7AccQ0Qx6BAgIEAE" target="_blank"><img src="img/b_logos/b1.png" alt="Brand 1"></a>
+                <a href="https://www.blackberry.com/us/en.html" target="_blank"><img src="img/b_logos/b2.png" alt="Brand 2"></a>
+                <a href="https://cubot.net/" target="_blank"><img src="img/b_logos/b3.png" alt="Brand 3"></a>
+                <a href="https://www.tecno-mobile.com/" target="_blank"><img src="img/b_logos/b4.png" alt="Brand 4"></a>
+                <a href="https://www.lg.com/in/" target="_blank"><img src="img/b_logos/b5.jpeg" alt="Brand 5"></a>
+                <a href="https://www.motorola.com/us/" target="_blank"><img src="img/b_logos/b6.png" alt="Brand 6"></a>
+                <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiHovutmKaHAxXkPYMDHVanDcIYABAAGgJzZg&ase=2&gclid=CjwKCAjw7s20BhBFEiwABVIMrVGdlrCKtJ6aOs0PZdjReOlK1yKsweBLu8WlUbsVZTvk1LiE65JN5xoCARAQAvD_BwE&ohost=www.google.com&cid=CAESVeD2iIIoNDrGtKtY52nMGJ3ytrmxOtmKM4YfPs4WI8IgZHXNWu-6IZohsanL8QiazLqIYA3DHruyVOH2CclUMfum8UzX8Q0eFiJlv7fwDV_5Hma2O1Y&sig=AOD64_1sPSBMscMYLhBxyEREGmjPj_Owuw&q&nis=4&adurl&ved=2ahUKEwi-yPWtmKaHAxV24zgGHSSPC08Q0Qx6BAgGEAE" target="_blank"><img src="img/b_logos/b7.png" alt="Brand 7"></a>
+                <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjDr62-mKaHAxXBqWYCHTXwBCsYABAEGgJzbQ&ase=2&gclid=CjwKCAjw7s20BhBFEiwABVIMrdSU0aHoI1KN3hSli31eJuQusZUN9VhSMr1GOAgEXzxPtpAp-mxK0BoCgekQAvD_BwE&ohost=www.google.com&cid=CAESVeD2-3qYKQKxk7H2A_pkYQeGVT32TJv1cUusoXQjEqObhRa0FYfWb-YDxT44l54UDVXJDgQSXX4R1C0NzUJ7nV64YrD7E62FaWZrlKPo8nlIpvKYJyE&sig=AOD64_3ZAJe7Xylc9yF7N002Zg3uXMPbtw&q&nis=4&adurl&ved=2ahUKEwjelqa-mKaHAxWV1jgGHXwVAwMQ0Qx6BAgGEAE" target="_blank"><img src="img/b_logos/b8.png" alt="Brand 8"></a>
+                <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwihp47smKaHAxVsHIMDHcrgAFsYABAAGgJzZg&ase=2&gclid=CjwKCAjw7s20BhBFEiwABVIMrdlaOCh4bzl7Bwoc653iZkT5iw8IDwvzzUgNZ8qKw_hsEm46_4JhbhoCwMgQAvD_BwE&ohost=www.google.com&cid=CAESVeD2TIfs4Sw5ZRRHS-w9Oj6tmQqlMg8YNZMsqfeMNYH4aXbWXJUet661zG58EXLCJhaIFX_74nteky8xy81aEKFouOVeQ6_ZKvGV_0k3ZnSRnRvyJrM&sig=AOD64_0X9rPF7hFw1GgqgneH4gpjM12DRA&q&nis=4&adurl&ved=2ahUKEwiK4YjsmKaHAxVx9DgGHSvoC-QQ0Qx6BAgQEAE" target="_blank"><img src="img/b_logos/b9.png" alt="Brand 9"></a>
+                <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjo6_H-mKaHAxVIqWYCHb46DTsYABAAGgJzbQ&ase=2&gclid=CjwKCAjw7s20BhBFEiwABVIMrWyAZNiZSbU6_nZADQPHCdMUpfRXAkD6hQRaC751xbjRPJWN50VllBoCfSEQAvD_BwE&ohost=www.google.com&cid=CAESVeD2aRhWwYyKVbmgoZrr4bFAcG3td9ai2Uew0e446oEd3NLAFP9F1ruNdqzkGRSTNwcCAooJZD5gVVrHXI8h5zGdRYKwPuKDDAOmBAQDrd39uMDtH5E&sig=AOD64_3ijKVJVFrb7nE2TM7vF3oRj-IbNw&q&nis=4&adurl&ved=2ahUKEwiLxOv-mKaHAxVE3jgGHdfFADgQ0Qx6BAgSEAE" target="_blank"><img src="img/b_logos/b10.png" alt="Brand 10"></a>
+                <a href="https://www.infinixmobility.com/" target="_blank"><img src="img/b_logos/b11.png" alt="Brand 11"></a>
+                <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwi9wq6UmaaHAxWAgEsFHZTvA4EYABAAGgJzZg&ase=2&gclid=CjwKCAjw7s20BhBFEiwABVIMrSMENjeIckAL_NxS7l6FZLMOVHYfQ16cKZ35ATbDQJztJ8khsT4wThoCRW4QAvD_BwE&ohost=www.google.com&cid=CAESVeD27pdoCKG35cD-1jBL9TpY2vaniS_zWZ4N6tyYcEoHyZK1CA6OtpNmDqCwf-Nch4d6qAnl9_R6OYsxKL8qu1V42SAklNKcx4_aHebd4t9pw-3oZ_c&sig=AOD64_1VjQbJK5S82BXMk6-wAGkkJ-14iQ&q&nis=4&adurl&ved=2ahUKEwib-KaUmaaHAxWP3TgGHYBnD6IQ0Qx6BAgMEAE" target="_blank"><img src="img/b_logos/b12.png" alt="Brand 12"></a>
+                <a href="https://www.itel-india.com/" target="_blank"><img src="img/b_logos/b13.jpeg" alt="Brand 13"></a>
+                <a href="https://www.asus.com/in/" target="_blank"><img src="img/b_logos/b14.png" alt="Brand 14"></a>
+                <a href="https://www.vodafone.com/" target="_blank"><img src="img/b_logos/b15.jpeg" alt="Brand 15"></a>
+                <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiHgs3DmaaHAxVQpWYCHcgiDtsYABAAGgJzbQ&ase=2&gclid=CjwKCAjw7s20BhBFEiwABVIMrXV-_AbnQgOeIyFDQWBCQyrmgn5V1S1FqJCu0l0sGVrs5l4G0UqW-RoC1fUQAvD_BwE&ohost=www.google.com&cid=CAESVeD2PCmpA2HV_6V-HO4yol35PMQMfAEVRVggYpBhcDhftEevB17cpBM7tH7A174hRBJQIDMhrI0KXajYtbKT1ug4ZTlKX9DSAKeZMaenuNeYLjPR0gk&sig=AOD64_1wNZ7L0azStqOrAtBHVr8z6AzNkA&q&nis=4&adurl&ved=2ahUKEwjLy8bDmaaHAxXt2DgGHR3nDaoQ0Qx6BAgHEAE" target="_blank"><img src="img/b_logos/b16.png" alt="Brand 16"></a>
+                <a href="https://www.xolo.io/" target="_blank"><img src="img/b_logos/b17.png" alt="Brand 17"></a>
+                <a href="https://micromaxinfo.com/" target="_blank"><img src="img/b_logos/b18.png" alt="Brand 18"></a>
+                <a href="https://www.iqoo.com/in" target="_blank"><img src="img/b_logos/b19.jpeg" alt="Brand 19"></a>
+                <a href="https://www.honor.com/in/" target="_blank"><img src="img/b_logos/b20.png" alt="Brand 20"></a>
+                <a href="https://www.pepsi.com/" target="_blank"><img src="img/b_logos/b21.jpeg" alt="Brand 21"></a>
+                <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjGocWkmqaHAxVD0zwCHWW1BCYYABAAGgJzZg&ase=2&gclid=CjwKCAjw7s20BhBFEiwABVIMrUfPyzW5Yh_IdmpTbrUyQyACfeMIumpVZ5TR8uugES3BpvJvzu1QPxoCbgwQAvD_BwE&ohost=www.google.com&cid=CAESVeD2n_DU8JsKt2VIO2eFW_hZxyPK-CcauBGhPNc4vBA5UXjoEWxrT7d3jG1l_WDqOOeazChr6dGYobSnXJzn86aPjK8lRgE-R2pg4_gZ-_nT0PINqUE&sig=AOD64_0Vy-LgNWS-Bkpd6iOgAzY7uhT7Hw&q&nis=4&adurl&ved=2ahUKEwjJtb6kmqaHAxW7oGMGHQIbCHEQ0Qx6BAgIEAE" target="_blank"><img src="img/b_logos/b22.jpeg" alt="Brand 22"></a>
+                <a href="https://www.michelin.in/" target="_blank"><img src="img/b_logos/b23.png" alt="Brand 23"></a>
+                <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwifpb66mqaHAxUiqGYCHQWwDhUYABAAGgJzbQ&ase=2&gclid=CjwKCAjw7s20BhBFEiwABVIMrQ-ROY3b4Y5IHikbagvUd2sCKO3DxLErMGNTwvVgyNuFZnYtY6IsjBoC_ZIQAvD_BwE&ohost=www.google.com&cid=CAESVeD2-qEcJoQKnbIGUIhBvlIv2E2sJxZEfP-lMFZG6L_7Bl_-6O6Q5OB5aQwIDmut4b1TB3x9PBpUKSJvZGsPb23i7Mi-8GZFPAvwoK_n17I4yt8Z-Q4&sig=AOD64_03Y0ulPXXSb2aIm3gfgPMQx5r9Ig&q&nis=4&adurl&ved=2ahUKEwjR6be6mqaHAxVR4zgGHSEcDVEQ0Qx6BAgGEAE" target="_blank"><img src="img/b_logos/b24.png" alt="Brand 24"></a>
+                <a href="https://www.redbull.com/" target="_blank"><img src="img/b_logos/b25.jpeg" alt="Brand 25"></a>
+                <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwidv96sm6aHAxXIpmYCHSOvCSAYABAAGgJzbQ&ase=2&gclid=CjwKCAjw7s20BhBFEiwABVIMrSMjH3LMD-FuUvntYL1dQgEsBZr0-HnoyG_dBPr8-yEbZy6i5W_FgxoCiv0QAvD_BwE&ohost=www.google.com&cid=CAESVeD2DTUBGYw6pjE4jZoS9oZ-brYtWC8bqAsKpaBu2GnzpYilbSs7x5j4UX1g3hzjUxEgT-PCqTj3EP5Q8Uzr6piA2F8k7gmEImNxzM05Nw4wnS1yKqo&sig=AOD64_1HSznJ1gAyWrHtA1THx6iS1ZHkqw&q&nis=4&adurl&ved=2ahUKEwj3ltism6aHAxVSi2MGHXaAB54Q0Qx6BAgGEAE" target="_blank"><img src="img/b_logos/b26.png" alt="Brand 26"></a>
+                <a href="https://www.toyotabharat.com/" target="_blank"><img src="img/b_logos/b27.jpeg" alt="Brand 27"></a>
+                <a href="https://www.coca-cola.com/in/en" target="_blank"><img src="img/b_logos/b28.png" alt="Brand 28"></a>
+                <a href="https://www.audi.in/in/web/en.html" target="_blank"><img src="img/b_logos/b29.png" alt="Brand 29"></a>
+                <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiQmtHTm6aHAxVBDHsHHVAMDJUYABAAGgJ0bQ&ase=2&gclid=CjwKCAjw7s20BhBFEiwABVIMrYtHYakgM72b4H6NgeNVl1sxyyT9a_ZSgnTnbBnTmP9ziSNnsISFiRoCBWoQAvD_BwE&ohost=www.google.com&cid=CAESVeD21Tc0fTEFXDJP7f_Opbmo1tIkgNhQo0-TjWeQZDe0uFHZKdSUJ5zlAn_cdV9T_jr1-4rp_dvSpEM8qswyBQXoEX7qmicDYw2-920ycCipxOPdO9Y&sig=AOD64_2TBWLjJxlGRnx2NBirje-5PlCH6w&q&nis=4&adurl&ved=2ahUKEwii7srTm6aHAxWVsFYBHUEJBfQQ0Qx6BAgGEAE" target="_blank"><img src="img/b_logos/b30.png" alt="Brand 30"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="customer-reviews">
+        <h2>Customer Reviews</h2>
+        <div class="reviews-row">
+            <div class="review">
+                <img src="img/reviews/amazon.jpeg" alt="Customer 1">
+                <div>
+                    <div class="name"><a href="https://www.google.com/search?q=jeff+bezos&oq=Jeff+Bezos&gs_lcrp=EgZjaHJvbWUqEAgAEAAYgwEY4wIYsQMYgAQyEAgAEAAYgwEY4wIYsQMYgAQyDQgBEC4YgwEYsQMYgAQyCggCEAAYsQMYgAQyBwgDEAAYgAQyCggEEAAYsQMYgAQyBwgFEAAYgAQyEAgGEAAYgwEYsQMYgAQYigUyBwgHEAAYgAQyDQgIEAAYgwEYsQMYgAQyBwgJEAAYjwKoAgCwAgA&sourceid=chrome&ie=UTF-8">Jeff Bezos</a></div>
+                    <div class="text">NK-Couriers they always deliver our stocks from one hub to another very efficiently.</div>
+                </div>
+            </div>
+            <div class="review">
+                <img src="img/reviews/audi.jpeg" alt="Customer 2">
+                <div>
+                    <div class="name"><a href="https://www.google.com/search?q=Gernot+D%C3%B6llner&sca_esv=1af7de384805fe35&sxsrf=ADLYWIIlcUTFXVfjf2N8Nfz4yccHcPD4PA%3A1720950567435&ei=J5-TZqyPGvuT4-EPpo6qyAw&ved=0ahUKEwjsvv25oKaHAxX7yTgGHSaHCskQ4dUDCA8&uact=5&oq=Gernot+D%C3%B6llner&gs_lp=Egxnd3Mtd2l6LXNlcnAiD0dlcm5vdCBEw7ZsbG5lcjIFEC4YgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSLQEUABYAHAAeAGQAQCYAX2gAX2qAQMwLjG4AQPIAQD4AQL4AQGYAgGgAogBmAMAkgcDMC4xoAfLBg&sclient=gws-wiz-serp">Gernot Döllner</a></div>
+                    <div class="text">Their service is faster than our Audi R8 V10.</div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews-row">
+            <div class="review">
+                <img src="img/reviews/coco cola.jpeg" alt="Customer 3">
+                <div>
+                    <div class="name"><a href="https://www.google.com/search?q=James+Quincey&sca_esv=1af7de384805fe35&sxsrf=ADLYWIK5stcmdGNbLlo4WGx5E2Ejnz2jqQ%3A1720950588848&ei=PJ-TZu-6M8Lj4-EPnueF6AQ&ved=0ahUKEwjvyJjEoKaHAxXC8TgGHZ5zAU0Q4dUDCA8&uact=5&oq=James+Quincey&gs_lp=Egxnd3Mtd2l6LXNlcnAiDUphbWVzIFF1aW5jZXkyCBAuGIAEGLEDMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMhcQLhiABBixAxiXBRjcBBjeBBjfBNgBAUiABVAAWABwAHgBkAEAmAF9oAF9qgEDMC4xuAEDyAEA-AEC-AEBmAIBoAKQAZgDALoGBggBEAEYFJIHAzAuMaAHpAw&sclient=gws-wiz-serp">James Quincey</a></div>
+                    <div class="text">Their service gives us energy as you get from our coke.</div>
+                </div>
+            </div>
+            <div class="review">
+                <img src="img/reviews/oneplus.jpeg" alt="Customer 4">
+                <div>
+                    <div class="name"><a href="https://www.google.com/search?q=Pete+Lau&sca_esv=1af7de384805fe35&sxsrf=ADLYWIKd-2ErFsDSIaREYBC8B0fauZK3EA%3A1720950610564&ei=Up-TZt6SIoy14-EP-aW02Ac&ved=0ahUKEwjeg8bOoKaHAxWM2jgGHfkSDXsQ4dUDCA8&uact=5&oq=Pete+Lau&gs_lp=Egxnd3Mtd2l6LXNlcnAiCFBldGUgTGF1MgsQLhiABBixAxiDATIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIaEC4YgAQYsQMYgwEYlwUY3AQY3gQY4ATYAQFI0QtQAFgAcAB4AZABAJgBfKABfKoBAzAuMbgBA8gBAPgBAvgBAZgCAaACjgGYAwC6BgYIARABGBSSBwMwLjGgB5QH&sclient=gws-wiz-serp">Pete Lau</a></div>
+                    <div class="text">Excellent service. Their process is more reliable than our processor.</div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews-row">
+            <div class="review centered-review">
+                <img src="img/reviews/techno.jpeg" alt="Customer 5">
+                <div>
+                    <div class="name"><a href="https://www.google.com/search?q=Sujoy+Biswas&sca_esv=1af7de384805fe35&sxsrf=ADLYWIL9dnOtPiztpMFnap1j2RVJAJGueg%3A1720950632656&ei=aJ-TZrnVJ-aG4-EPopigoAE&ved=0ahUKEwi5qYrZoKaHAxVmwzgGHSIMCBQQ4dUDCA8&uact=5&oq=Sujoy+Biswas&gs_lp=Egxnd3Mtd2l6LXNlcnAiDFN1am95IEJpc3dhczILEC4YgAQYxwEYrwEyCxAuGIAEGMcBGK8BMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yCBAAGIAEGKIEMggQABiABBiiBDIaEC4YgAQYxwEYrwEYlwUY3AQY3gQY4ATYAQFI8wFQAFgAcAB4AZABAJgBngGgAZ4BqgEDMC4xuAEDyAEA-AEC-AEBmAIBoAKuAZgDALoGBggBEAEYFJIHAzAuMaAHigs&sclient=gws-wiz-serp">Sujoy Biswas</a></div>
+                    <div class="text">Very professional and reliable. Our ROM is not enough to store their service excellence.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2024 NK-Couriers. All rights reserved.
+        <div>Contact us at nkcouriers@gmail.com | 7868091722</div>
+        <div>Follow us on social media: 
+            <a href="#" style="color: white; text-decoration: none;">Facebook</a> | 
+            <a href="#" style="color: white; text-decoration: none;">Twitter</a> | 
+            <a href="#" style="color: white; text-decoration: none;">Instagram</a>
+        </div>
+        <div>
+            <a href="privacy_policy.html">Privacy Policy |</a>
+            <a href="terms_conditions.html">Terms & Conditions</a>
+        </div>
+</footer>
+
+</body>
+</html>

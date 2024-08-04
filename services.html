@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK Couriers - Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000; /* Dark black */
+        }
+        header {
+            background-color: #28a745; /* Green */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 1.2em;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header nav a {
+            color: #fff;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .content {
+            padding-top: 80px; 
+        }
+        .quote-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            background-image: url('img/Services/bg.jpg'); 
+            background-size: cover;
+            background-position: center;
+        }
+        .quote {
+            background-color: rgba(255, 255, 255, 0.7); 
+            border: 1px solid #28a745;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 15px;
+            width: 45%;
+            transition: transform 0.3s, background-color 0.3s;
+            font-size: 1.2em; 
+            color: #000; 
+            backdrop-filter: blur(10px); 
+        }
+        .quote:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 0.9); 
+        }
+        .services-section {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff; 
+        }
+        .services-section h2 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: #000; /* Dark black */
+        }
+        .service {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #28a745;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            background-color: #fff; 
+        }
+        .service:hover {
+            transform: scale(1.02);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .service-description {
+            width: 30%;
+            text-align: left;
+            font-size: 1.1em;
+            color: #000; /* Dark black */
+        }
+        .service-button {
+            text-align: center;
+            width: 20%;
+        }
+        .service-button button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+        .service-button button:hover {
+            background-color: #218838;
+        }
+        .service-image {
+            width: 30%;
+        }
+        .service-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #28a745;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="courierDetails.html">Courier Details</a>
+            <a href="about_us.html">About Us</a>
+            <a href="contact_us.html">Contact Us</a>
+            <a href="help_support.html">Help & Support</a>
+            <a href="index.html">Sign IN/UP</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="quote-section">
+            <div class="quote">"Service with a smile."</div>
+            <div class="quote">"We deliver more than just packages."</div>
+            <div class="quote">"Your satisfaction, our priority."</div>
+            <div class="quote">"Fast, reliable, secure."</div>
+            <div class="quote">"On time, every time."</div>
+            <div class="quote">"Your package is our promise."</div>
+            <div class="quote">"Connecting people, one delivery at a time."</div>
+            <div class="quote">"Excellence in every delivery."</div>
+            <div class="quote">"Your trust, our commitment."</div>
+            <div class="quote">"Delivering happiness, one package at a time."</div>
+        </div>
+
+        <div class="services-section">
+            <h2>Our Services</h2>
+            <div class="service">
+                <div class="service-description">
+                    <h3>Local Services</h3>
+                    <p>NK Couriers provides swift and reliable local courier services. We ensure your packages are delivered on time with utmost care and efficiency. Trust us for your urgent and same-day deliveries.</p>
+                </div>
+                <div class="service-button">
+                    <button onclick="localservice.html"><a href="localservice.html">Local Service</a></button>
+                </div>
+                <div class="service-image">
+                    <img src="img/Services/local.jpeg" alt="Local Service"  width="150" height="220">
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-description">
+                    <h3>National Services</h3>
+                    <p>Our national courier services span across the country, offering you a dependable solution for your delivery needs. Whether it's a small package or a large consignment, NK Couriers has you covered.</p>
+                </div>
+                <div class="service-button">
+                    <button onclick="">National Service</button>
+                </div>
+                <div class="service-image">
+                    <img src="img/Services/national.png" alt="National Service" width="180" height="250">
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-description">
+                    <h3>International Services</h3>
+                    <p>NK Couriers offers efficient and secure international courier services. We partner with top global networks to ensure your packages reach their destinations safely and promptly worldwide.</p>
+                </div>
+                <div class="service-button">
+                    <button onclick="">International Service</button>
+                </div>
+                <div class="service-image">
+                    <img src="img/Services/international.jpeg" alt="International Service" width="150" height="220">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 NK-Couriers. All rights reserved.
+        <div>Contact us at nkcouriers@gmail.com | 7868091722</div>
+        <div>Follow us on social media: 
+            <a href="#" style="color: white; text-decoration: none;">Facebook</a> | 
+            <a href="#" style="color: white; text-decoration: none;">Twitter</a> | 
+            <a href="#" style="color: white; text-decoration: none;">Instagram</a>
+        </div>
+        <div>
+            <a href="privacy_policy.html">Privacy Policy |</a>
+            <a href="terms_conditions.html">Terms & Conditions</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Courier Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('img/local_service_bg.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #000;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #4CAF50;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-group input[type="file"] {
+            padding: 3px;
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Local Courier Services</h2>
+            <form action="StoreLocalCourierService" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">DOB:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="phno">Phone Number:</label>
+                    <input type="tel" id="phno" name="phno" required>
+                </div>
+                <div class="form-group">
+                    <label for="from-address">From Address:</label>
+                    <textarea id="from-address" name="fromAddress" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="to-address">To Address:</label>
+                    <textarea id="to-address" name="toAddress" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="courier-description">Courier Description:</label>
+                    <textarea id="courier-description" name="courierDescription" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="product-photo">Product Photo:</label>
+                    <input type="file" id="product-photo" name="productPhoto" accept="image/*" required>
+                </div>
+                <button class="button" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

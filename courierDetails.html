@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centered Buttons Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        background-image: url('img/success (2).jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Ensures wrapper spans the full height */
+    }
+
+    header {
+        background-color: green;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+
+    .content {
+        flex: 1; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+    }
+
+    .centered-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .button {
+        display: inline-block;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .button:hover {
+        background-color: #45a049;
+    }
+
+    footer {
+        background-color: green;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    footer div {
+        margin-bottom: 5px;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+   <div class="wrapper">
+       <header>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about_us.html">About Us</a>
+                <a href="contact_us.html">Contact Us</a>
+                <a href="help_support.html">Help & Support</a>
+                <a href="index.html">Sign IN/UP</a>
+            </nav>
+        </header>
+        
+        <main class="content">
+            <div class="centered-buttons">       
+                <a href="#" class="button">Local Service Details</a>
+                <a href="#" class="button">National Service Details</a>
+                <a href="#" class="button">International Service Details</a>
+            </div>
+        </main>
+
+        <footer>
+            &copy; 2024 NK-Couriers. All rights reserved.
+            <div>Contact us at nkcouriers@gmail.com | 7868091722</div>
+            <div>Follow us on social media: 
+                <a href="#" style="color: white; text-decoration: none;">Facebook</a> | 
+                <a href="#" style="color: white; text-decoration: none;">Twitter</a> | 
+                <a href="#" style="color: white; text-decoration: none;">Instagram</a>
+            </div>
+            <div>
+                <a href="privacy_policy.html">Privacy Policy | </a>
+                <a href="terms_conditions.html">Terms & Conditions</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
